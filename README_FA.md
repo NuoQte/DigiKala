@@ -7,13 +7,13 @@
 
 **روش های نصب کردن پکیج:**
 
-   Install the DgiKala library from PyPI or GitHub.
+   نصب از طریق Pypi:
    
    ```bash
    pip install DigiKala
    ```
 
- یا  
+ یا نصب از طریق گیتهاب:
 
    ```bash
    git clone https://github.com/NuoQTe/DigiKala.git
@@ -187,7 +187,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
     - دریافت اطلاعات حساب کاربری
     - دریافت اطلاعات سبد خرید
     - اضافه کردن محصولات به سبد خرید
-    - حرف محصولات به سبد خرید
+    - حذف محصولات از سبد خرید
 
 
   
