@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DigiKala
 
 [Change the language to English](https://github.com/NuoQTe/DigiKala/blob/main/README.md)
@@ -200,5 +199,3 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 ## Developer
 - **Telegram**: [t.me/NuoQTe](https://t.me/NuoQTe)
 
->>>>>>> 4f4ca4e (initial commit)
----
