@@ -24,6 +24,17 @@ class Client:
                  workdir:str=None
                  
                  ) -> None:
+        """crate a client for connect to digikala
+
+        Args:
+            name (str): session name
+            phone_number (str, optional):  Defaults to None.
+            email (str, optional):  Defaults to None.
+            password (str, optional):  Defaults to None.
+            do_login (bool, optional): doyou want to login? . Defaults to None.
+            in_memory (bool, optional): not crate session file . Defaults to None.
+            workdir (str, optional): session location directory. Defaults to None.
+        """
         
         if phone_number:
             phone_number = phone_number.replace('+98','0')
@@ -157,7 +168,7 @@ class Client:
         raise errors.SessionWrongPassword()
 
 
-    async def check_signin(self)-> bool:
+    async def is_login(self)-> bool:
         """
         Check if you are logged in or not!
 
@@ -254,8 +265,7 @@ class Client:
         res = await res.json()
         return FullUser(res['data'],'fulluser',self) if res['status'] == 200 else None
 
-        
-    
+              
     async def search(self,filter:SearchFilter) -> SearchResult:
         """
         Start your search to find products

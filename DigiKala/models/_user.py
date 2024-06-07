@@ -1,6 +1,5 @@
 from typing import Any
 from .object_model import Object
-from .cart import Cart
 
 
 class DigiClub(Object):

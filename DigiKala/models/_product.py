@@ -227,7 +227,8 @@ class ST_CmpTacker(Object):
     zero : str
     
     def __init__(self, data: dict, name: str, client) -> None:
-        self.data_fx = self._data.get('data-fx',None)
+        try:self.data_fx = self._data.get('data-fx',None)
+        except:pass
         super().__init__(data, name, client)
 
 

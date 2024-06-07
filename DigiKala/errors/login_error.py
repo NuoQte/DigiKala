@@ -1,11 +1,4 @@
 
-
-class SessionPasswordNeeded(Exception):
-    def __init__(self) -> None:
-        message = 'a session password is required' 
-        super().__init__(message)
-
-
 class SessionWrongCode(Exception):
     def __init__(self) -> None:
         message = 'The code is wrong' 

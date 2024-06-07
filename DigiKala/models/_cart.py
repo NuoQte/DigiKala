@@ -1,6 +1,6 @@
 
 from .object_model import Object
-from .product import Product , Variant , Digiplus
+from .product import Product , Variant 
 
 
 class CartDigiClub(Object):
@@ -34,7 +34,8 @@ class PriceDecreased(Object):
     to : int
     from_price : int
     def __init__(self, data: dict, name: str, client) -> None:
-        self.from_price : int = data['from']
+        try:self.from_price : int = data['from']
+        except:pass
         super().__init__(data, name, client)
         
 class Warnings(Object):
